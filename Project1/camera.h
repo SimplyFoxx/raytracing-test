@@ -46,13 +46,13 @@ private:
 		auto viewport_v = vec3(0, -viewport_height, 0);
 
 		// Počítá horizontální a vertikální delty vektorů od pixelu k pixelu
-		auto pixel_delta_u = viewport_u / image_width;
-		auto pixel_delta_v = viewport_v / image_height;
+		pixel_delta_u = viewport_u / image_width;
+		pixel_delta_v = viewport_v / image_height;
 
 		// Počítání lokace horního levého pixelu
 		auto viewport_upper_left = center
 			- vec3(0, 0, focal_length) - viewport_u / 2 - viewport_v / 2;
-		auto pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
+		pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
 	}
 
 	color ray_color(const ray& r, const hittable& world) {
