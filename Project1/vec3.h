@@ -43,6 +43,13 @@ public:
 	double length_squared() const {
 		return e[0] * e[0] + e[1] * e[1] + e[2] * e[2];
 	}
+
+	static vec3 random() {
+		return vec3(random_double(), random_double(), random_double());
+	}
+	static vec3 random(double min, double max) {
+		return vec3(random_double(min, max), random_double(min, max), random_double(min, max));
+	}
 };
 
 // point3 = alias pro vec3, užitečný pro geometrickou čitelnost* kódu, tady ho nastavuju
