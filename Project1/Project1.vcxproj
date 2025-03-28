@@ -132,7 +132,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="vec3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
@@ -143,6 +142,7 @@
     <ClInclude Include="ray.h" />
     <ClCompile Include="rtweekend.h" />
     <ClInclude Include="sphere.h" />
+    <ClInclude Include="vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
